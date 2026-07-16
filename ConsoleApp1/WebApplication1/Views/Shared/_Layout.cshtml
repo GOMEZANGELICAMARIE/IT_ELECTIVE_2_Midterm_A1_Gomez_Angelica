@@ -1,50 +1,87 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>@ViewData["Title"] - WebApplication1</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true"/>
-</head>
-<body>
-<header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebApplication1</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>@ViewData["Title"] - Personal Portfolio</title>
 
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2026 - WebApplication1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
-</footer>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
-</body>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+		<link class="text-white" rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+	</head>
+	<body>
+
+		<div class="container-fluid">
+			<div class="row">
+				<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse bg-white" style="background-color: #ffffff !important; min-height: 100vh;">
+					<div class="position-sticky pt-3 d-flex flex-column justify-content-between h-100">
+						<div>
+							<div class="text-center px-3 mb-4 text-white border-bottom border-light border-opacity-25 pb-3">
+								<img src="~/lib/images/formalpic.jpg"
+									 alt="Angelica Marie J. Gomez"
+									 class="img-fluid rounded-circle shadow mb-3 mt-2 border border-4 border-white-50"
+									 style="width: 110px; height: 110px; object-fit: cover;" />
+
+								<h5 class="fw-bold mb-1 fs-5" style="color: #000000 !important;">Angelica Marie J. Gomez</h5>
+
+								<small class="d-block fs-7" style="color: #666666 !important; font-weight: 500;">Aspiring Software Developer</small>
+							</div>
+							
+							<ul class="nav flex-column px-2">
+								<li class="nav-item mb-2">
+									<a class="nav-link text-dark active" href="#home">
+										<i class="bi bi-house-door me-2"></i> Home
+									</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a class="nav-link text-dark" href="#about">
+										<i class="bi bi-person me-2"></i> About Me
+									</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a class="nav-link text-dark" href="#skills">
+										<i class="bi bi-code-slash me-2"></i> Skills
+									</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a class="nav-link text-dark" href="#projects">
+										<i class="bi bi-laptop me-2"></i> Projects
+									</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a class="nav-link text-dark" href="#contact">
+										<i class="bi bi-envelope me-2"></i> Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="p-3 text-center border-top border-light border-opacity-10">
+							<small style="color: #000000  !important;">© 2026 - Portfolio</small>
+						</div>
+					</div>
+				</nav>
+
+				<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow d-md-none">
+					<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#home">My Portfolio</a>
+					<button class="navbar-toggler position-absolute d-md-none collapsed m-2" type="button"
+							data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+							aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</header>
+				<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-content">
+					<div class="container py-4">
+						@RenderBody()
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<script src="~/lib/jquery/dist/jquery.min.js"></script>
+		<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="~/js/site.js" asp-append-version="true"></script>
+		@await RenderSectionAsync("Scripts", required: false)
+	</body>
 </html>

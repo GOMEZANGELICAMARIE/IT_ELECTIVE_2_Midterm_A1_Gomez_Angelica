@@ -1,8 +1,468 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+
+ViewData["Title"] = "My Portfolio";
+
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+<!-- HOME SECTION -->
+<section id="home" class="min-vh-100 d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT SIDE - TEXT -->
+            <div class="col-lg-7 order-2 order-lg-1">
+
+                <span class="badge bg-light text-dark">
+                    Hello! Welcome to my Portfolio!
+                </span>
+
+                <h1 class="display-2 fw-bold text-white mb-3">
+                    I'm Angelica Marie
+                </h1>
+
+                <h2 class="text-secondary mb-4">
+                    Aspiring Software Developer
+                </h2>
+
+               <p class="lead text-white">
+                    Hello! My name is Angelica Marie J. Gomez, currently a
+                    3rd-year college student taking a Bachelor of Science in
+                    Information Technology. Being an IT student, I enjoy web
+                    development and system analysis and design. I prioritize
+                    flexibility in the IT field because I believe it is crucial
+                    to solving practical problems.
+                </p>
+
+               <div class="mt-4">
+                    <a href="#projects" class="btn btn-light btn-lg me-3 px-4">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline-light btn-lg px-4">
+                        Contact Me
+                    </a>
+               </div>
+
+            </div>
+
+            <!-- RIGHT SIDE - IMAGE -->
+            <div class="col-lg-5 text-center order-1 order-lg-2">
+
+                <img src="~/lib/images/formalpic.jpg"
+                     class="img-fluid rounded-circle shadow"
+                     alt="Angelica"
+                     style="width:500px;
+                            height:500px;
+                            object-fit:cover;">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- ABOUT ME SECTION -->
+
+<section id="about">
+
+<div class="container">
+
+    <h2 class="display-5 fw-bold mb-4 text-white text-center text-md-start">About Me</h2>
+
+    <div class="row g-4">
+
+        <div class="col-lg-6">
+
+            <h4 class="mb-3" style="color: #b0b0b0;"> Biography &amp; Career Goals</h4>
+
+            <p class="text-white">
+
+               I am Angelica Marie J. Gomez currently pursuing a Bachelor of Science in Information Technology and have developed a passion for programming and web development. 
+               I enjoy learning new technologies, solving problems, and creating applications that improve efficiency and make everyday tasks easier.
+
+            </p>
+
+            <p class="text-white">
+
+             My goal is to build a successful career in the IT industry as a Software Developer or Web Developer. 
+             I aspire to work on meaningful projects, expand my technical skills, and continue learning throughout my career while making valuable contributions to the technology field.
+
+            </p>
+
+        </div>
+
+        <div class="col-lg-6">
+
+    <div class="card border-0 shadow-sm p-4 bg-white text-dark">
+
+        <h5 class="fw-bold mb-3 text-dark">
+            <i class="bi bi-mortarboard me-2 text-dark"></i>
+            Education
+        </h5>
+
+        <p class="mb-1 fw-semibold" style="color: #b0b0b0;">
+            Bachelor of Science in Information Technology
+        </p>
+
+        <p class="text-dark small">
+            Lyceum of Alabang • Currently Taking
+        </p>
+
+        <hr class="my-3">
+
+        <h5 class="fw-bold mb-3 text-dark">
+            <i class="bi bi-heart me-2 text-dark"></i>
+            Personal Interests
+        </h5>
+
+        <div class="d-flex flex-wrap gap-2">
+    <a href="https://www.google.com/search?q=vb.net+programming" target="_blank" class="badge bg-light text-dark p-2 border text-decoration-none">
+        Vb.Net Programming
+    </a>
+    <a href="https://www.google.com/search?q=Web+Application+Design" target="_blank" class="badge bg-light text-dark p-2 border text-decoration-none">
+        Web Application Design
+    </a>
+    <a href="https://www.google.com/search?q=ui+designing" target="_blank" class="badge bg-light text-dark p-2 border text-decoration-none">
+        UI Designing
+    </a>
+    <a href="https://www.google.com/search?q=system+analysis+and+design" target="_blank" class="badge bg-light text-dark p-2 border text-decoration-none">
+        System Analysis and Design
+    </a>
 </div>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- SKILLS SECTION -->
+
+<section id="skills" class="bg-light-subtle">
+
+<div class="container">
+
+    <h2 class="display-5 fw-bold mb-5 text-dark text-center">Technical Skills</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+        
+
+        <!-- Category 1 -->
+
+        <div class="col">
+
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+
+                <div class="card-body">
+
+                    <div class="text-white mb-3"><i class="bi bi-file-earmark-code fs-1"></i></div>
+
+                    <h5 class="card-title fw-bold">Languages</h5>
+
+                    <p class="card-text text-white small">C#, Python, Java, SQL, HTML, CSS, Vb.Net</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Category 2 -->
+
+        <div class="col">
+
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+
+                <div class="card-body">
+
+                    <div class="text-white mb-3"><i class="bi bi-globe fs-1"></i></div>
+
+                    <h5 class="card-title fw-bold">Web Tech</h5>
+
+                    <p class="card-text text-white small">ASP.NET Core MVC, Bootstrap 5, RESTful APIs</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Category 3 -->
+
+        <div class="col">
+
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+
+                <div class="card-body">
+
+                    <div class="text-white mb-3"><i class="bi bi-database fs-1"></i></div>
+
+                    <h5 class="card-title fw-bold">Databases</h5>
+
+                    <p class="card-text text-white small">MS SQL Server, Entity Framework Core</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Category 4 -->
+
+        <div class="col">
+
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+
+                <div class="card-body">
+
+                    <div class="text-white mb-3"><i class="bi bi-tools fs-1"></i></div>
+
+                    <h5 class="card-title fw-bold">Dev Tools</h5>
+
+                    <p class="card-text text-white small">Visual Studio, Git, GitHub, Pycharm</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- PROJECTS SECTION -->
+
+<section id="projects">
+
+<div class="container">
+
+    <h2 class="display-5 fw-bold mb-5 text-white text-center">Featured Projects</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+        
+
+        <!-- Project 1 -->
+
+        <div class="col">
+    <div class="card h-100 border-0 shadow-sm overflow-hidden">
+
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+             class="card-img-top"
+             alt="Student Information System"
+             style="height:200px; object-fit:cover;">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title fw-bold text-white">
+                Student Information Management System
+            </h5>
+
+            <p class="card-text text-white flex-grow-1">
+                A web-based application for managing student records, enrollment,
+                grades, attendance, and academic information through a centralized dashboard.
+            </p>
+
+            <div class="mb-3">
+                <span class="badge bg-dark-subtle text-dark">ASP.NET Core MVC</span>
+                <span class="badge bg-dark-subtle text-dark">SQL Server</span>
+                <span class="badge bg-dark-subtle text-dark">Bootstrap 5</span>
+            </div>
+
+            <a href="#" class="btn project-btn mt-auto">
+                View Details
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+
+        <!-- Project 2 -->
+
+        <div class="col">
+    <div class="card h-100 border-0 shadow-sm overflow-hidden">
+
+        <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=900&q=80"
+             class="card-img-top"
+             alt="Parking Management"
+             style="height:200px; object-fit:cover;">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title fw-bold text-white">
+                Smart Parking Management System
+            </h5>
+
+            <p class="card-text text-white flex-grow-1">
+                A parking management system that records vehicle entries,
+                available parking slots, payments, and generates parking reports.
+            </p>
+
+            <div class="mb-3">
+                <span class="badge bg-dark-subtle text-dark">C#</span>
+                <span class="badge bg-dark-subtle text-dark">SQL Server</span>
+                <span class="badge bg-dark-subtle text-dark">Windows Forms</span>
+            </div>
+
+            <a href="#" class="btn project-btn mt-auto">
+                View Details
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+
+        <!-- Project 3 -->
+
+      <div class="col">
+    <div class="card h-100 border-0 shadow-sm overflow-hidden">
+
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+             class="card-img-top"
+             alt="Portfolio Website"
+             style="height:200px; object-fit:cover;">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title fw-bold text-white">
+                Personal Portfolio Website
+            </h5>
+
+            <p class="card-text text-white flex-grow-1">
+                A responsive portfolio website showcasing projects, technical
+                skills, education, achievements, and contact information.
+            </p>
+
+            <div class="mb-3">
+                <span class="badge bg-dark-subtle text-dark">ASP.NET Core MVC</span>
+                <span class="badge bg-dark-subtle text-dark">Bootstrap 5</span>
+                <span class="badge bg-dark-subtle text-dark">CSS3</span>
+            </div>
+
+            <a href="#" class="btn project-btn mt-auto">
+                View Details
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+
+
+
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="contact-section">
+
+    <div class="container">
+
+        <h1 class="contact-title">Get in Touch</h1>
+
+        <div class="row mt-5">
+
+            <!-- Left Column -->
+            <div class="col-lg-5">
+
+                <div class="contact-details">
+
+                    <div class="mb-5">
+                        <small>Email</small>
+                        <h5>angelicamariegomez1@gmail.com</h5>
+                    </div>
+
+                    <div class="mb-5">
+                        <small>Mobile Number</small>
+                        <h5>+63 (123) 456-7890</h5>
+                    </div>
+
+                    <div class="mb-5">
+                        <small>GitHub</small>
+                        <h5>
+                            <a href="https://github.com/GOMEZANGELICAMARIE" target="_blank">
+                                github.com/GOMEZANGELICAMARIE
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div class="mb-5">
+                        <small>LinkedIn</small>
+                        <h5>
+                            <a href="https://www.linkedin.com/in/angelica-marie-gomez-504866422/" target="_blank">
+                                linkedin.com/in/angelica-marie-gomez-504866422
+                            </a>
+                        </h5>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-7 d-flex flex-column justify-content-center">
+
+                <h2 class="mb-4">
+                    Let's Build Something Together
+                </h2>
+
+                <p class="contact-description">
+                    I'm always open to discussing new opportunities,
+                    collaborating on exciting projects, or simply connecting
+                    with fellow developers. Feel free to reach out through any
+                    of the contact methods listed here.
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="#" class="btn btn-light btn-lg px-5">
+                        Download Resume
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
