@@ -1,121 +1,200 @@
-﻿<section id="projects">
+﻿@{
+	ViewData["Title"] = "Projects";
+}
 
-    <div class="container">
+<section class="py-5">
 
-        <h2 class="display-5 fw-bold mb-5 text-white text-center">Featured Projects</h2>
+	<div class="container">
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+		<div class="text-center mb-5">
+
+			<h1 class="display-4 fw-bold">
+				My Projects
+			</h1>
+
+			<p class="lead text-white">
+				These projects showcase my programming skills, technical knowledge, and hands-on experience in software development.
+			</p>
+
+		</div>
 
 
+		<div class="row g-4">
 
-            <!-- Project 1 -->
 
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+			<div class="col-lg-4 col-md-6">
 
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+				<div class="card h-100 shadow-sm border-0 overflow-hidden">
+
+					<img src="~/lib/images/studregsystem.jpg"
                          class="card-img-top"
-                         alt="Student Information System"
-                         style="height:200px; object-fit:cover;">
-
-                    <div class="card-body d-flex flex-column">
-
-                        <h5 class="card-title fw-bold text-white">
-                            Student Information Management System
-                        </h5>
-
-                        <p class="card-text text-white flex-grow-1">
-                            A web-based application for managing student records, enrollment,
-                            grades, attendance, and academic information through a centralized dashboard.
-                        </p>
-
-                        <div class="mb-3">
-                            <span class="badge bg-dark-subtle text-dark">ASP.NET Core MVC</span>
-                            <span class="badge bg-dark-subtle text-dark">SQL Server</span>
-                            <span class="badge bg-dark-subtle text-dark">Bootstrap 5</span>
-                        </div>
-
-                        <a href="#" class="btn project-btn mt-auto">
-                            View Details
-                        </a>
-
-                    </div>
-
-                </div>
-            </div>
+                         style="height:200px;object-fit:cover;"
+                         alt="Project Dashboard" />
 
 
-            <!-- Project 2 -->
+					<div class="card-body d-flex flex-column">
 
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+						<h4 class="fw-bold text-dark">
+							@ViewData["Project1"]
+						</h4>
 
-                    <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=900&q=80"
+
+						<p class="text-white flex-grow-1">
+							A centralized software platform designed to manage the enrollment, academic records, and scheduling of students. 
+							It replaces manual, paper-based processes with automated digital workflows, allowing institutions to 
+							track data securely and scale their operations efficiently
+						</p>
+
+
+						<div class="mb-3">
+
+							<span class="badge bg-white">
+								Visual Studio
+							</span>
+
+							<span class="badge bg-white text-dark">
+								Visual Basic
+							</span>
+
+							<span class="badge bg-white text-dark">
+								VB.Net
+							</span>
+
+							<span class="badge bg-white text-dark">
+								Windows Forms 
+							</span>
+						</div>
+
+
+						<button class="btn btn-outline-light text-white">
+							View Details
+						</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="col-lg-4 col-md-6">
+
+				<div class="card h-100 shadow-sm border-0 overflow-hidden">
+
+
+					<img src="~/lib/images/loancalsystem.jpg"
                          class="card-img-top"
-                         alt="Parking Management"
-                         style="height:200px; object-fit:cover;">
-
-                    <div class="card-body d-flex flex-column">
-
-                        <h5 class="card-title fw-bold text-white">
-                            Smart Parking Management System
-                        </h5>
-
-                        <p class="card-text text-white flex-grow-1">
-                            A parking management system that records vehicle entries,
-                            available parking slots, payments, and generates parking reports.
-                        </p>
-
-                        <div class="mb-3">
-                            <span class="badge bg-dark-subtle text-dark">C#</span>
-                            <span class="badge bg-dark-subtle text-dark">SQL Server</span>
-                            <span class="badge bg-dark-subtle text-dark">Windows Forms</span>
-                        </div>
-
-                        <a href="#" class="btn project-btn mt-auto">
-                            View Details
-                        </a>
-
-                    </div>
-
-                </div>
-            </div>
+                         style="height:200px;object-fit:cover;"
+                         alt="Chat Application" />
 
 
-            <!-- Project 3 -->
+					<div class="card-body d-flex flex-column">
 
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm overflow-hidden">
 
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+						<h4 class="fw-bold text-dark">
+							@ViewData["Project2"]
+						</h4>
+
+
+						<p class="text-white flex-grow-1">
+							A digital tool designed to compute and outline loan repayment schedules.
+							It takes user inputs—such as the principal loan amount, annual interest rate,
+							and loan term—and outputs the estimated monthly payment, total interest, and an
+							amortization schedule mapping payments toward principal and interest over time.
+						</p>
+
+
+						<div class="mb-3">
+
+							<span class="badge bg-white text-dark">
+								Visual Studio
+							</span>
+
+							<span class="badge bg-white text-dark">
+								Visual Basic
+							</span>
+
+							<span class="badge bg-white text-dark">
+								VB.Net
+							</span>
+
+						</div>
+
+
+						<button class="btn btn-outline-light text-white">
+							View Details
+						</button>
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+			<div class="col-lg-4 col-md-6">
+
+				<div class="card h-100 shadow-sm border-0 overflow-hidden">
+
+
+					<img src="~/lib/images/atmsys.jpg"
                          class="card-img-top"
-                         alt="Portfolio Website"
-                         style="height:200px; object-fit:cover;">
+                         style="height:200px;object-fit:cover;"
+                         alt="Task Management" />
 
-                    <div class="card-body d-flex flex-column">
 
-                        <h5 class="card-title fw-bold text-white">
-                            Personal Portfolio Website
-                        </h5>
+					<div class="card-body d-flex flex-column">
 
-                        <p class="card-text text-white flex-grow-1">
-                            A responsive portfolio website showcasing projects, technical
-                            skills, education, achievements, and contact information.
-                        </p>
 
-                        <div class="mb-3">
-                            <span class="badge bg-dark-subtle text-dark">ASP.NET Core MVC</span>
-                            <span class="badge bg-dark-subtle text-dark">Bootstrap 5</span>
-                            <span class="badge bg-dark-subtle text-dark">CSS3</span>
-                        </div>
+						<h4 class="fw-bold text-dark">
+							@ViewData["Project3"]
+						</h4>
 
-                        <a href="#" class="btn project-btn mt-auto">
-                            View Details
-                        </a>
 
-                    </div>
+						<p class="text-white flex-grow-1">
+							A secure, computerized telecommunications device that allows customers to perform financial transactions—such 
+							as cash withdrawals, deposits, and balance inquiries—without the need of a human bank teller.
+						</p>
 
-                </div>
-            </div>
+
+						<div class="mb-3">
+
+							<span class="badge bg-white">
+								Visual Studio
+							</span>
+
+							<span class="badge bg-white">
+								Visual Basic .NET
+							</span>
+
+							<span class="badge bg-white">
+								Microsoft SQL Server
+							</span>
+
+							<span class="badge bg-white">
+								Windows Forms
+							</span>
+							
+						</div>
+
+
+						<button class="btn btn-outline-light text-white">
+							View Details
+						</button>
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
 
 </section>

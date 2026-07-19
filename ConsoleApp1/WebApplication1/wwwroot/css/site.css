@@ -13,57 +13,80 @@ HTML
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="row">
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse bg-white">
-            <div class="position-sticky pt-3 d-flex flex-column justify-content-between h-100">
-                <div>
-                    <!-- Profile Photo, Name & Title in Sidebar -->
-                    <div class="text-center px-3 mb-4 text-white border-bottom border-secondary pb-3">
-                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=200&auto=format&fit=crop" 
-                             alt="Angelica Marie J. Gomez" 
-                             class="img-fluid rounded-circle shadow mb-3 mt-2 border border-4 border-secondary" 
-                             style="width: 110px; height: 110px; object-fit: cover;" />
-                        
-                        <h5 class="fw-bold mb-1 fs-5">Angelica Marie J. Gomez</h5>
-                        <small class="lead" style="color:#d6d6d6;">
-                    </div>
-                    
-                    <!-- Navigation Menu -->
-                    <ul class="nav flex-column px-2">
-                        <li class="nav-item mb-2">
-                            <a class="nav-link text-white active" href="#home">
-                                <i class="bi bi-house-door me-2"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a class="nav-link text-white-50" href="#about">
-                                <i class="bi bi-person me-2"></i> About Me
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a class="nav-link text-white-50" href="#skills">
-                                <i class="bi bi-code-slash me-2"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a class="nav-link text-white-50" href="#projects">
-                                <i class="bi bi-laptop me-2"></i> Projects
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a class="nav-link text-white-50" href="#contact">
-                                <i class="bi bi-envelope me-2"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Sidebar Footer -->
-                <p class="lead" style="color:#d6d6d6;">
-                    <small>© 2026 - Portfolio</small>
-                </div>
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+
+    <div class="position-sticky pt-3 d-flex flex-column justify-content-between" style="min-height:100vh;">
+
+        <!-- TOP PART -->
+        <div>
+
+            <!-- Profile -->
+            <div class="text-center px-3 mb-4 border-bottom pb-3">
+
+                <img src="~/lib/images/formalpic.jpg"
+                     class="img-fluid rounded-circle shadow mb-3 mt-2 border border-4 border-secondary"
+                     style="width:110px;height:110px;object-fit:cover;"
+                     alt="Angelica">
+
+                <h5 class="fw-bold text-dark mb-1">
+                    Angelica Marie J. Gomez
+                </h5>
+
+                <small class="text-secondary">
+                    Aspiring Software Developer
+                </small>
+
             </div>
+
+            <!-- Navigation -->
+            <ul class="nav flex-column px-2">
+
+                <li class="nav-item mb-2">
+                    <a class="nav-link active" href="#home">
+                        <i class="bi bi-house-door me-2"></i> Home
+                    </a>
+                </li>
+
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#about">
+                        <i class="bi bi-person me-2"></i> About Me
+                    </a>
+                </li>
+
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#skills">
+                        <i class="bi bi-code-slash me-2"></i> Skills
+                    </a>
+                </li>
+
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#projects">
+                        <i class="bi bi-laptop me-2"></i> Projects
+                    </a>
+                </li>
+
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#contact">
+                        <i class="bi bi-envelope me-2"></i> Contacts
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="sidebar-footer">
+            <small>© 2026 - Portfolio</small>
+        </div>
+
+    </div>
+
+</nav>
+</div> 
+</div> 
+</nav>
+</div>
         </nav>
 
         <!-- Mobile Header Bar (Only visible on Mobile/Tablets) -->
@@ -105,41 +128,61 @@ html {
     font-size: 16px;
   }
 }
-
 body{
     background:#000;
     color:#fff;
 }
+.skill-card{
+    background-color: #171717;
+    border: 1px solid #2f2f2f;
+    border-radius: 20px;
+    height: 240px;
+    transition: .3s;
+}
 
+.skill-card:hover{
+    transform: translateY(-5px);
+    border-color: #ffffff;
+}
+
+.skill-card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.skill-card h4,
+.skill-card p{
+    color: white;
+}
+
+.sidebar-footer small {
+    color: #000000 !important;
+}
 .sidebar{
-    position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    z-index:100;
     background:#fff;
     border-right:1px solid #ddd;
-    box-shadow:none;
 }
 
-@media (max-width: 767.98px) {
-  .sidebar {
-    position: static;
-    height: auto;
-    width: 100%;
-  }
-  .main-content {
-    margin-top: 20px;
-  }
-}
 .sidebar .nav-link{
     color:#000 !important;
+    font-weight:500;
+    padding:12px 18px;
     border-radius:8px;
     transition:.3s;
 }
 
+.sidebar .nav-link i{
+    color:#000 !important;
+}
+
 .sidebar .nav-link:hover{
     background:#000;
+    color:#fff !important;
+}
+.sidebar .nav-link:hover i{
     color:#fff !important;
 }
 
@@ -148,6 +191,9 @@ body{
     color:#fff !important;
 }
 
+.sidebar .nav-link.active i{
+    color:#fff !important;
+}
 .fs-7 {
   font-size: 0.85rem;
 }
@@ -204,5 +250,33 @@ section:last-of-type {
 .bg-white p,
 .bg-white i {
     color: #000000 !important;
+}
+.sidebar h5 {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.sidebar small {
+    color: #555 !important;
+}
+.sidebar .nav-link {
+    color: #000 !important;
+}
+
+.sidebar .nav-link i {
+    color: #000 !important;
+}
+
+.contact-card{
+    background:#171717;
+    border-radius:20px;
+}
+
+.contact-card img{
+    min-height:600px;
+}
+
+.contact-card hr{
+    opacity:.2;
 }
 cdn.jsdelivr.net

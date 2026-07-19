@@ -1,7 +1,5 @@
 ﻿@{
-
     ViewData["Title"] = "Contacts";
-
 }
 
 <section class="py-5">
@@ -10,143 +8,112 @@
 
         <div class="text-center mb-5">
 
-            <h1 class="display-4 fw-bold">
-
+            <h1 class="display-4 fw-bold text-white">
                 Contact Me
             </h1>
 
-            <p class="lead text-muted">
-
-                Feel free to reach out if you want to collaborate or discuss projects.
+            <p class="lead text-white">
+                Have a project in mind? Let's connect and bring your ideas to life.
             </p>
 
         </div>
 
+        <div class="card border-0 shadow-lg overflow-hidden contact-card">
 
-        <div class="row justify-content-center">
+            <div class="row g-0">
 
-            <div class="col-lg-8">
+                <!-- LEFT SIDE -->
+                <div class="col-lg-5">
 
-
-                <div class="card shadow-sm border-0 p-4 text-center">
-
-
-                    <h3 class="fw-bold mb-4">
-
-                        Let's build something together!
-                    </h3>
-
-
-                    <div class="row g-4 mb-4">
-
-
-                        <div class="col-md-6">
-
-                            <div class="p-4 border rounded bg-light">
-
-                                <i class="bi bi-envelope-fill text-primary fs-1"></i>
-
-                                <h5 class="fw-bold mt-3">
-
-                                    Email
-                                </h5>
-
-                                <p class="text-muted mb-0">
-
-                                    @ViewData["Email"]
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="col-md-6">
-
-                            <div class="p-4 border rounded bg-light">
-
-                                <i class="bi bi-telephone-fill text-success fs-1"></i>
-
-                                <h5 class="fw-bold mt-3">
-
-                                    Mobile Number
-                                </h5>
-
-                                <p class="text-muted mb-0">
-
-                                    @ViewData["Phone"]
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <h5 class="fw-bold mb-3">
-
-                        Social Links
-                    </h5>
-
-
-                    <div class="d-flex justify-content-center gap-3 mb-4">
-
-
-                        <a href="@ViewData["Github"]"
-                           target="_blank"
-                           class="btn btn-dark btn-lg rounded-circle">
-
-                            <i class="bi bi-github"></i>
-
-                        </a>
-
-
-                        <a href="@ViewData["LinkedIn"]"
-                           target="_blank"
-                           class="btn btn-primary btn-lg rounded-circle">
-
-                            <i class="bi bi-linkedin"></i>
-
-                        </a>
-
-
-                        <a href="@ViewData["Facebook"]"
-                           target="_blank"
-                           class="btn btn-info text-white btn-lg rounded-circle">
-
-                            <i class="bi bi-facebook"></i>
-
-                        </a>
-
-
-                    </div>
-
-
-
-
-                    <button class="btn btn-success btn-lg px-5 shadow">
-
-                        <i class="bi bi-download me-2"></i>
-
-                        Download Resume
-
-                    </button>
-
+                    <img src="~/lib/images/view.jpg"
+                         class="img-fluid h-100 w-100"
+                         style="object-fit:cover;"
+                         alt="Contact Image">
 
                 </div>
 
+                <!-- RIGHT SIDE -->
+                <div class="col-lg-7">
+
+                    <div class="p-5">
+
+                        <h2 class="fw-bold text-white">
+                            Let's Work Together
+                        </h2>
+
+                        <p class="text-light mb-4">
+                            I'm always open to discussing projects, collaborations,
+                            and new opportunities.
+                        </p>
+
+                        <hr class="border-white">
+
+                        <div class="mb-4">
+
+                            <h5 class="text-white">
+                                <i class="bi bi-envelope-fill text-white me-2"></i>
+                                Email
+                            </h5>
+
+                            <p class="text-light">
+                                @ViewData["Email"]
+                            </p>
+
+                            <h5 class="text-white mt-4">
+                                <i class="bi bi-telephone-fill text-white me-2"></i>
+                                Mobile Number
+                            </h5>
+
+                            <p class="text-light">
+                                @ViewData["Mobile Number"]
+                            </p>
+
+                        </div>
+
+                        <hr class="border-secondary">
+
+                        <h5 class="text-white mb-3">
+                            Social Links
+                        </h5>
+
+                        <div class="d-flex gap-3 mb-4">
+
+                            <a href="@ViewData["Github"]"
+                               target="_blank"
+                               class="btn btn-dark rounded-circle">
+
+                                <i class="bi bi-github"></i>
+
+                            </a>
+
+                            <a href="@ViewData["LinkedIn"]"
+                               target="_blank"
+                               class="btn btn-primary rounded-circle">
+
+                                <i class="bi bi-linkedin"></i>
+
+                            </a>
+
+                        </div>
+
+                        <button class="btn btn-success btn-lg w-100">
+
+                            <i class="bi bi-download me-2"></i>
+
+                            Download Resume
+
+                        </button>
+
+                    </div>
+
+                </div>
 
             </div>
 
-
         </div>
-
 
     </div>
 
+</section>
 
 </section>

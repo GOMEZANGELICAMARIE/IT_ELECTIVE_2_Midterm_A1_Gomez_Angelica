@@ -1,5 +1,5 @@
-﻿{
-    @ViewData["Title"] = "Skills";
+﻿@{
+    ViewData["Title"] = "Skills";
 }
 
 <section class="py-5">
@@ -12,49 +12,45 @@
                 Technical Skills
             </h1>
 
-            <p class="lead text-muted">
+            <p class="lead text-white">
 
-                Here are the technologies and tools I have learned and continue to improve.
+                These are the tools and technologies I've learned and am still getting progressing at.
             </p>
         </div>
 
         <div class="row g-4">
 
-            <div class="col-lg-3 col-md-6">
-                <div class="card h-100 shadow-sm border-0 text-center">
+            <div class="col-lg-6 col-md-6 mb-4">
+    <div class="card skill-card shadow border-0">
+
+        <div class="card-body">
+
+            <i class="bi bi-file-earmark-code text-white display-3"></i>
+
+            <h4 class="fw-bold mt-3 text-white">
+                Languages
+            </h4>
+
+            <p class="text-white">
+                @ViewData["Languages"]
+            </p>
+
+        </div>
+
+    </div>
+</div>
+            <div class="col-md-6 mb-4">
+                <div class="card skill-card h-100 shadow-sm border-0 text-center">
 
                     <div class="card-body">
 
-                        <i class="bi bi-file-earmark-code text-primary display-4"></i>
+                        <i class="bi bi-globe text-white display-4"></i>
 
-                        <h4 class="fw-bold mt-3">
-
-                            Languages
-                        </h4>
-
-                        <p class="text-muted">
-
-                            @ViewData["Languages"]
-                        </p>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="card h-100 shadow-sm border-0 text-center">
-
-                    <div class="card-body">
-
-                        <i class="bi bi-globe text-success display-4"></i>
-
-                        <h4 class="fw-bold mt-3">
-
+                        <h4 class="fw-bold mt-3 text-white">
                             Web Development
                         </h4>
 
-                        <p class="text-muted">
+                        <p class="text-white">
 
                             @ViewData["Framework"]
                         </p>
@@ -64,19 +60,18 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="card h-100 shadow-sm border-0 text-center">
+            <div class="col-md-6 mb-4">
+                <div class="card skill-card h-100 shadow-sm border-0 text-center">
 
                     <div class="card-body">
 
-                        <i class="bi bi-database text-warning display-4"></i>
+                        <i class="bi bi-database text-white display-4"></i>
 
-                        <h4 class="fw-bold mt-3">
-
-                            Database
+                        <h4 class="fw-bold mt-3 text-white">
+                             Database
                         </h4>
 
-                        <p class="text-muted">
+                        <p class="text-white">
 
                             @ViewData["Database"]
                         </p>
@@ -86,19 +81,18 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="card h-100 shadow-sm border-0 text-center">
+            <div class="col-md-6 mb-4">
+                <div class="card skill-card h-100 shadow-sm border-0 text-center">
 
                     <div class="card-body">
 
-                        <i class="bi bi-tools text-danger display-4"></i>
+                        <i class="bi bi-tools text-white display-4"></i>
 
-                        <h4 class="fw-bold mt-3">
-
+                        <h4 class="fw-bold mt-3 text-white">
                             Development Tools
                         </h4>
 
-                        <p class="text-muted">
+                        <p class="text-whit">
 
                             @ViewData["Developer Tools"]
                         </p>
@@ -109,230 +103,5 @@
             </div>
 
         </div>
-
-        <hr class="my-5" />
-
-        <div class="text-center">
-
-            <h3 class="fw-bold mb-4">
-
-                My Learning Philosophy
-            </h3>
-
-            <p class="lead text-muted mx-auto" style="max-width:750px;">
-
-                I continuously improve my technical skills by developing projects,
-
-                studying modern technologies, and practicing problem-solving.
-
-                I believe learning never stops, especially in the field of Information Technology.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-@{
-
-    ViewData["Title"] = "Projects";
-
-}
-
-<section class="py-5">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <h1 class="display-4 fw-bold">
-
-                My Projects
-            </h1>
-
-            <p class="lead text-muted">
-
-                Here are some projects that represent my programming and software development skills.
-            </p>
-
-        </div>
-
-
-        <div class="row g-4">
-
-
-            <div class="col-lg-4 col-md-6">
-
-                <div class="card h-100 shadow-sm border-0 overflow-hidden">
-
-                    <img src="~/lib/images/project1.png"
-                         class="card-img-top"
-                         style="height:200px;object-fit:cover;"
-                         alt="Project Dashboard" />
-
-
-                    <div class="card-body d-flex flex-column">
-
-                        <h4 class="fw-bold text-dark">
-
-                            @ViewData["Project1"]
-                        </h4>
-
-
-                        <p class="text-muted flex-grow-1">
-
-                            A management parking system designed to monitor driver's information,
-
-                            parking slots, and display important data using a Microsoft Access Interface.
-                        </p>
-
-
-                        <div class="mb-3">
-
-                            <span class="badge bg-dark">
-
-                                Microsoft Access
-                            </span>
-
-                        </div>
-
-
-                        <button class="btn btn-outline-primary">
-
-                            View Details
-                        </button>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-lg-4 col-md-6">
-
-                <div class="card h-100 shadow-sm border-0 overflow-hidden">
-
-
-                    <img src="~/lib/images/2.png"
-                         class="card-img-top"
-                         style="height:200px;object-fit:cover;"
-                         alt="Chat Application" />
-
-
-                    <div class="card-body d-flex flex-column">
-
-
-                        <h4 class="fw-bold text-dark">
-
-                            @ViewData["Project2"]
-                        </h4>
-
-
-                        <p class="text-muted flex-grow-1">
-
-                            A loan application system that offers you to loan money.
-                        </p>
-
-
-                        <div class="mb-3">
-
-                            <span class="badge bg-danger">
-
-                                Visual Studio
-                            </span>
-
-                            <span class="badge bg-warning text-dark">
-
-                                Visual Basic
-                            </span>
-
-                            <span class="badge bg-info text-dark">
-
-                                VB.Net
-                            </span>
-
-                        </div>
-
-
-                        <button class="btn btn-outline-primary">
-
-                            View Details
-                        </button>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="col-lg-4 col-md-6">
-
-                <div class="card h-100 shadow-sm border-0 overflow-hidden">
-
-
-                    <img src="~/lib/images/3.png"
-                         class="card-img-top"
-                         style="height:200px;object-fit:cover;"
-                         alt="Task Management" />
-
-
-                    <div class="card-body d-flex flex-column">
-
-
-                        <h4 class="fw-bold text-dark">
-
-                            @ViewData["Project3"]
-                        </h4>
-
-
-                        <p class="text-muted flex-grow-1">
-
-                            Im currently make a Parking Management System as my Midterm Project.
-                        </p>
-
-
-                        <div class="mb-3">
-
-                            <span class="badge bg-primary">
-
-                                Python
-                            </span>
-
-                            <span class="badge bg-secondary">
-
-                                CTkinter
-                            </span>
-
-                            <span class="badge bg-success">
-
-                                Pycharm
-                            </span>
-
-                        </div>
-
-
-                        <button class="btn btn-outline-primary">
-
-                            View Details
-                        </button>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
 
 </section>

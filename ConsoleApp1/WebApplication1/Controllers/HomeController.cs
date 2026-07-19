@@ -21,6 +21,7 @@ namespace WebApplication1.Controllers
             ViewData["Title"] = "About";
             ViewData["Biography & Goals"] =
                 "I am Angelica Marie J. Gomez currently pursuing a Bachelor of Science in Information Technology and have developed a passion for programming and web development. I enjoy learning new technologies, solving problems, and creating applications that improve efficiency and make everyday tasks easier.";
+            ViewData["Education"] = "Lyceum of Alabang";
             return View();
         }
 
@@ -36,8 +37,8 @@ namespace WebApplication1.Controllers
         public IActionResult Projects()
         {
             ViewData["Title"] = "Projects";
-            ViewData["Project 1"] = "Loan Calculator System";
-            ViewData["Project 2"] = "Student Registration System";
+            ViewData["Project 1"] = "Student Registration System";
+            ViewData["Project 2"] = "Loan Calculator System"; 
             ViewData["Project 2"] = "ATM System";
             return View();
         }
@@ -47,7 +48,7 @@ namespace WebApplication1.Controllers
             ViewData["Email"] = "angelicamariegomez1@gmail.com";
             ViewData["Mobile Number"] = "+63 (123) 456-7890";
             ViewData["Github"] = "https://github.com/GOMEZANGELICAMARIE";
-            ViewData["LinkedIn"] = "https://www.linkedin.com/in/angelica-marie-gomez";
+            ViewData["LinkedIn"] = "https://www.linkedin.com/in/angelica-marie-gomez-504866422/";
             return View();
         }
 
